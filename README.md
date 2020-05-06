@@ -30,5 +30,7 @@ Incoming :
 
 9) [WIP] -> Working on connexion.
 
+                                        Objectif of the project : Learning Symfony
 
-                      Personnal work : COURBOIS Alexandre | Day :  {{ foo.createdAt | date('d/m/Y') }} | 06/05/2020
+                   Personnal work : COURBOIS Alexandre | Day :  {{ foo.createdAt | date('d/m/Y') }} | 06/05/2020
+
