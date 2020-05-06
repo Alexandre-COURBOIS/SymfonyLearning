@@ -22,7 +22,7 @@
 
 7) Working with Dependency injection.
 
-8) Create a form to add some user, user can be watch on home page, user can be modified, user can be created.
+8) Create a form to add some user, all users are visible on home page,  an user can be created, and he can be modified.
 
 (End of the first day working on this personnal learning project)
 
