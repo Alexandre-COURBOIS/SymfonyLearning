@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Profil de {{ user.name }}{% endblock %}
+
+{% block body %}
+    <div class="jumbotron">
+    <h1 class="display-3">Hello, {{user.name}}</h1>
+    <p class="lead">His mail : {{ user.email }}</p>
+    <hr class="my-4">
+    <p>Vous êtes {{ user.name }} votre compte a été créer le {{ user.createdAt | date('d/m/Y') }} à {{ user.createdAt | date('H:i') }}</p>
+    <p class="lead">
+    <a class="btn btn-primary btn-lg" href="{{ path('user_list') }}" role="button">Retour</a>
+{% endblock %}

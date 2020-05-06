@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ajouter un utilisateur{% endblock %}
+
+{% form_theme formUser 'bootstrap_4_layout.html.twig' %}
+
+{% block body %}
+
+    <h1>Ajouter un utilisateur</h1>
+
+    {{ form_start(formUser) }}
+
+    {{ form_row(formUser.name, {'attr': {'placeholder' : "Votre prénom"}}) }}
+    {{ form_row(formUser.surname, {'attr': {'placeholder' : "Votre Nom"}}) }}
+    {{ form_row(formUser.email, {'attr': {'placeholder' : "Votre email"}}) }}
+    {{ form_row(formUser.password.first, {'attr': {'placeholder' : "Votre mot de passe"}}) }}
+    {{ form_row(formUser.password.second, {'attr': {'placeholder' : "Confirmez votre mot de passe"}}) }}
+
+    <button type="submit" class="btn btn-success">
+        Ajouter l'utilisateur
+    </button>
+
+    {{ form_end(formUser) }}
+
+
+{% endblock %}

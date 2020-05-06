@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nos utilisateurs{% endblock %}
+
+{% block body %}
+
+    <h1>Nos utilisateurs</h1>
+
+    {% for user in users %}
+        <div class="jumbotron">
+            <h1 class="display-3">Hello, {{user.name}}</h1>
+            <p class="lead">His mail : {{ user.email }}</p>
+            <hr class="my-4">
+            <p>Vous êtes {{ user.name }} votre compte a été créer le {{ user.createdAt | date('d/m/Y') }} à {{ user.createdAt | date('H:i') }}</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="{{ path('user_more', {id: user.id})}}" role="button">Voir plus</a>
+                <a class="btn btn-primary btn-lg" href="{{ path('user_edit', {id: user.id})}}" role="button">Modifier</a>
+            </p>
+        </div>
+    {% endfor %}
+{% endblock %}
