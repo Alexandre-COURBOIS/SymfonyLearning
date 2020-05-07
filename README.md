@@ -26,9 +26,6 @@
 
 (End of the first day working on this personnal learning project)
 
-Incoming : 
-
-9) [WIP] -> Working on connexion.
 
                                         Objectif of the project : Learning Symfony
 
